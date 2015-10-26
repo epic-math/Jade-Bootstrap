@@ -1,0 +1,28 @@
+
+extng="en" )
+    head
+        title Baking Bootstrap Snippets with Jade
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+        meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+        meta( name='description', content='Baking Bootstrap Snippets with Jade' )
+        //- Bootswatch Theme
+        link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/flatly/bootstrap.min.css", rel="stylesheet")
+ 
+    body(style="padding-bottom:10rem;")
+        .container
+ 
+        script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+        script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )ends layout
+
+block content
+	div.container
+		div.row
+			div.col-sm-6.col-md-3.col-md-offset-4
+				img(src='/stylesheets/images/epicmath-logo.png', class='logo-img')
+				//img(src='/stylesheets/images/passportjs-logo.png', class='logo-img')
+				h1.text-center.login-title Sign in with ... :
+				a(href='/login/facebook', class='btn btn-block btn-social btn-facebook') Login with Facebook
+					i(class='fa fa-facebook')
+				a(href='/login/twitter', class='btn btn-block btn-social btn-twitter') Login with Twitter
+					i(class='fa fa-twitter')
