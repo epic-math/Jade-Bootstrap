@@ -20,6 +20,7 @@
     "bcrypt-nodejs": "*",
     "connect-flash": "*",
     "passport-twitter": "~1.0.2",
-    "passport-local": "~1.0.0"
+    "passport-local": "~1.0.0",
+    "serve-favicon": "~2.3.0"
   }
 }
